@@ -20,6 +20,7 @@ app.get('/nlw/:edition/:lesson/:day', async (req, res) => {
         res.status(constants.HTTP_STATUS_NOT_FOUND).send(new NotFound('Aula não encontrada!'));
         return;
       default:
+        console.log(e);
         res.status(constants.HTTP_STATUS_INTERNAL_SERVER_ERROR).send(new InternalError());
     }
   }
@@ -33,6 +34,7 @@ app.get('/nlw/:edition/day-:day', async (req, res) => {
   } catch (e) {
     switch (e.message) {
       default:
+        console.log(e);
         res.status(constants.HTTP_STATUS_INTERNAL_SERVER_ERROR).send(new InternalError());
     }
   }
