@@ -28,9 +28,5 @@
     "@types/express": "^4.17.12",
     "@types/node": "^15.12.4",
     "@types/puppeteer": "^5.4.3"
-  },
-  "engines": {
-    "node": "~12.18.4",
-    "npm": "~7.18.1"
   }
 }
